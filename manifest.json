@@ -1,0 +1,220 @@
+{
+    "name" : "shengqianxiong",
+    "appid" : "",
+    "description" : "省钱兄是一个汇聚了全网隐藏优惠券的网购返利软件 ！这里汇聚淘宝、京东、天猫、拼多多等商城优惠券信息！每天实时更新优惠券，发放一些商家的大额优惠券！",
+    "versionName" : "1.0.0",
+    "versionCode" : 1,
+    "transformPx" : false,
+    "app-plus" : {
+        "privacy" : {
+            "prompt" : "template",
+            "template" : {
+                "title" : "服务协议和隐私政策",
+                "message" : "请你务必审慎阅读、充分理解“服务协议”和“隐私政策”各条款，包括但不限于：为了更好的向你提供服务，我们需要收集你的设备标识、操作日志等信息用于分析、优化应用性能。<br/>　　你可阅读<a href=\"https://www.gomyorder.cn/pages/member/xieyi\">《服务协议》</a>和<a href=\"https://www.gomyorder.cn/pages/member/mimi\">《隐私政策》</a>了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。",
+                "buttonAccept" : "我知道了",
+                "buttonRefuse" : "暂不同意"
+            }
+        },
+        /* 5+App特有相关 */
+        "splashscreen" : {
+            "autoclose" : true,
+            "waiting" : true,
+            "alwaysShowBeforeRender" : true
+        },
+        "modules" : {
+            "SQLite" : {},
+            "OAuth" : {},
+            "Messaging" : {}
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>"
+                ],
+                "minSdkVersion" : 19,
+                "targetSdkVersion" : 26
+            },
+            "ios" : {
+                "urltypes" : [
+                    {
+                        "urlschemes" : [ "tbopen27748674", "sdkback20530bbe90ce47cbc4c3a8f30c52a782" ],
+                        "urlidentifier" : "$(PRODUCT_BUNDLE_IDENTIFIER)"
+                    }
+                ],
+                "urlschemewhitelist" : [ "tbopen", "tmall", "jdlogin", "openapp.jdmobile", "pinduoduo" ]
+            },
+            "schemeWhitelist" : [ "tbopen", "tmall", "taobao", "tianmao" ],
+            "appWhitelist" : [ "tbopen", "tmall", "taobao", "tianmao" ],
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wxdbd888f4bc8f08cd",
+                        "appsecret" : "d73468b34d33de7e31b0e508e7acf130",
+                        "UniversalLinks" : "https://www.gomyorder.cn/"
+                    }
+                },
+                "push" : {},
+                "statics" : {},
+                "share" : {},
+                "ad" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "",
+                    "xhdpi" : "",
+                    "xxhdpi" : ""
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "",
+                        "landscape-896h@3x" : "",
+                        "portrait-896h@2x" : "",
+                        "landscape-896h@2x" : "",
+                        "iphonex" : "",
+                        "iphonexl" : "",
+                        "retina55" : "",
+                        "retina55l" : "",
+                        "retina47" : "",
+                        "retina47l" : "",
+                        "retina40" : "",
+                        "retina40l" : "",
+                        "retina35" : ""
+                    },
+                    "ipad" : {
+                        "portrait-1366h@2x" : "",
+                        "landscape-1366h@2x" : "",
+                        "portrait-1194h@2" : "",
+                        "landscape-1194h@2x" : "",
+                        "portrait-1112h@2x" : "",
+                        "landscape-1112h@2x" : "",
+                        "portrait-retina7" : "",
+                        "landscape-retina7" : "",
+                        "portrait7" : "",
+                        "landscape7" : ""
+                    }
+                }
+            }
+        },
+        "usingComponents" : true,
+        "nativePlugins" : {
+            "Html5App-JdUnion" : {
+                "appkey" : "20530bbe90ce47cbc4c3a8f30c52a782",
+                "secretkey" : "959d3e571a584f7380aa368c08a762da",
+                "__plugin_info__" : {
+                    "name" : "Android 和 IOS 京东联盟 呼起京东App 插件",
+                    "description" : "支持 Android 和 IOS 京东联盟SDK  呼起京东App  QQ交流群：891416757",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=526",
+                    "android_package_name" : "com.maxd.sqx",
+                    "ios_bundle_id" : "com.maxd.sqx",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "526",
+                    "parameters" : {
+                        "appkey" : {
+                            "des" : "sdk appkey",
+                            "key" : "Jdunion:appkey",
+                            "value" : "20530bbe90ce47cbc4c3a8f30c52a782"
+                        },
+                        "secretkey" : {
+                            "des" : "sdk secretkey",
+                            "key" : "Jdunion:secretkey",
+                            "value" : "959d3e571a584f7380aa368c08a762da"
+                        }
+                    }
+                }
+            },
+            "UZK-Alibcsdk" : {
+                "__plugin_info__" : {
+                    "name" : "新版阿里百川SDK 4.0.0.8",
+                    "description" : "UZK-AlibcSDK模块 封装了阿里百川电商sdk",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=873",
+                    "android_package_name" : "com.maxd.sqx",
+                    "ios_bundle_id" : "com.maxd.sqx",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "873",
+                    "parameters" : {}
+                }
+            }
+        },
+        "nvueLaunchMode" : "fast"
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 小程序特有相关 */
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : true,
+            "postcss" : true,
+            "minified" : true
+        }
+    },
+    "uniStatistics" : {
+        "enable" : true
+    },
+    "h5" : {
+        "title" : "省钱兄",
+        "router" : {
+            "mode" : "history",
+            "base" : ""
+        },
+        "domain" : "https://www.gomyorder.cn/",
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "devServer" : {
+            "port" : 80
+        }
+    },
+    "mp-qq" : {
+        "setting" : {
+            "es6" : false
+        }
+    }
+}
+/* 5+App特有相关 */
+
